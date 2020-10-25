@@ -1,0 +1,14 @@
+.article {
+    list-style-type: none;
+    background-color: skyblue;
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+    border: black 1px solid;
+
+}
+
+.author {
+    color: slategray;
+    margin: 0px;
+}
