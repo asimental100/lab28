@@ -7,5 +7,4 @@ export const fetchNews = (searchTerm) => {
       author: article.author,
       description: article.description
     })));
-
 };

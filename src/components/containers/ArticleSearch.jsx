@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ArticleList from '../components/ArticlesList/ArticleList';
-import Search from '../components/Search/Search';
-import { fetchNews } from '../services/fetchNews';
+import ArticleList from '../presentation/ArticlesList/ArticleList';
+import Search from '../presentation/Search/Search';
+import { fetchNews } from '../../services/fetchNews';
 
 export default class ArticleSearch extends Component {
   state = {
@@ -10,7 +10,7 @@ export default class ArticleSearch extends Component {
     text: ''
   }
 
-  handleSearch = () => {
+  handleSearch = async() => {
     this.setState({ loading: true });
 
     fetchNews(this.state.text)
